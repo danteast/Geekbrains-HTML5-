@@ -1,0 +1,599 @@
+/** {
+    margin: 0;
+    padding: 0
+}*/
+html {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    min-width: 100%
+}
+
+.padding-site {
+    padding: 50px;
+    box-sizing: border-box;
+    clear: both
+}
+
+.subtitle {
+    display: block;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #445161;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/*Code fir the block "HEADER"*/
+.main-header {
+    background-color: #445162;
+}
+
+.main-header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.main-header-wrp {
+    float: left;
+}
+
+.title {
+    font-family: Arial;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: -15px
+}
+
+.main-img1 {
+    background-color: white;
+    float: right
+}
+
+.header-list {
+    list-style-type: none;
+    margin-top: 20px
+}
+
+.header-list li {
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-left: 50px
+}
+
+.header-list li:before {
+    content: '';
+    display: block;
+    float: left;
+    /*outline: 1px solid white;*/
+    height: 20px;
+    width: 25px;
+    position: absolute;
+    background-image: url(../img/check_icon_346.png);
+    background-size: cover;
+    top: 6px;
+    left: 5px;
+}
+
+/*Code fir the block "About-product"*/
+.about-product:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.about-product_leftblock {
+    float: left;
+    max-width: 60%
+}
+
+.about-product_subtitle {
+    text-align: left;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0
+}
+
+.text1 {
+    margin: 20px 0 0 0
+}
+
+.img {
+    background-color: #445162;
+}
+
+.video {
+    display: block;
+    float: right
+}
+
+/*Code fir the block "Dignity and pluses product"*/
+.dignity {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.dignity:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.dignity_list {
+    width: 48%
+}
+
+.block1 {
+    min-height: 70px;
+    font-size: 20px;
+    color: #445162;
+    margin: 0 0 20px 0;
+}
+
+.block1:last-child {
+    margin: 0;
+}
+
+.summary {
+    position: relative
+}
+
+.comment {
+    display: block;
+    margin-left: 50px;
+    margin-top: -30px
+}
+
+.comment:before {
+    content: '+';
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 90%;
+    width: 32px;
+    height: 32px;
+    background-color: #445161;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.summary {
+    display: block
+}
+
+/* Code for the block "Screenshots"*/
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.screenshots:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both
+}
+
+.screenshots_item {
+    width: 49%;
+    margin: 0 0 30px 0;
+}
+
+.screenshots_item:nth-of-type(3) {
+    margin-bottom: 0;
+}
+
+.screenshots_item:nth-of-type(4) {
+    margin-bottom: 0;
+}
+
+.screenshots_description {
+    max-width: 356px;
+    float: right;
+}
+
+.screenshots_subtitle {
+    color: #6c6c6c;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 360px;
+    text-align: left;
+    margin: 0 0 10px 0
+}
+
+.screenshots_img {
+    float: left;
+    background-color: #445162;
+    margin: 0 10px
+}
+
+/* Code for the block "Reviews"*/
+.reviews {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row
+}
+
+.reviews:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.reviews_figure {
+    max-width: 48%;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.reviews_figure:nth-of-type(3) {
+    margin: 0 0 0 0
+}
+
+.reviews_figure:nth-of-type(4) {
+    margin: 0 0 0 0
+}
+
+.reviews_img {
+    float: left;
+    border-radius: 50%;
+    background-color: #445162;
+    margin: 0 10px;
+}
+
+.reviews_text {
+    background-color: #ebebeb;
+    display: block;
+    width: 483px;
+    margin-left: 8px;
+    padding: 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+    position: relative
+}
+
+.reviews_text:before {
+    content: '';
+    display: block;
+    border: 15px solid transparent;
+    border-right: 15px solid #ebebeb;
+    position: absolute;
+    top: 24px;
+    left: -30px;
+}
+
+.reviews-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #989898;
+    font-style: normal;
+    margin-top: 5px
+}
+
+/*Code for the block "Buy_it_now"*/
+.Buy_it_now {
+    min-height: 656px;
+    padding: 50px 120px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Buy_it_now:after {
+    content: '';
+    width: 100%;
+    display: block;
+    clear: both
+}
+
+.block_buy {
+    width: 30%;
+    background-color: #445162;
+    margin-right: 5%;
+    bottom: 50px;
+    outline: 1px solid #445162;
+    /*float: left;*/
+    /*position: absolute*/
+}
+
+.block_buy:last-child {
+    margin-right: 0
+}
+
+.block_buy_title {
+    display: block;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 200%;
+    font-weight: 400x;
+    color: #ffffff;
+}
+
+.Buy_it_now_price {
+    display: block;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 400;
+    color: #445162;
+}
+
+.Buy_it_now_list {
+    padding: 20px 20px 20px 40px
+}
+
+.Buy_it_now_list li {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.button_buy {
+    display: block;
+    max-width: 260px;
+    height: 40px;
+    background-color: white;
+    margin: 0 10%;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    text-align: center;
+    text-decoration-line: none;
+    line-height: 200%;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: 2px 2px darkgrey;
+}
+
+.button_buy:hover {
+    background-color: gainsboro
+}
+
+.button_buy:active {
+    box-shadow: none
+}
+
+/*Code for the block "FOOTER"*/
+footer {
+    min-width: 100%
+}
+
+.main-footer {
+    min-width: 100%;
+    min-height: 410px;
+    background-color: #445161;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-footer_contacts {
+    float: left;
+    width: 45%;
+}
+
+.main-footer_input-area {
+    min-width: 80%;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    margin: 0 0 20px 0;
+    
+}
+
+.main-footer_input-area:focus {
+    outline: none;
+    text-transform: capitalize
+}
+
+.textarea {
+    resize: none;
+    height: 170px
+}
+
+.textarea:focus {
+   text-transform: none
+}
+
+.submit_button {
+    display: block;
+    content: '';
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    margin: 20px 27% 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    text-align: center;
+    text-decoration-line: none;
+    line-height: 200%;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+.submit_button:hover {
+    background-color: gainsboro;
+    
+}
+
+.submit_button:active {
+    box-shadow: none;
+    outline: none
+}
+
+.footer_SN {
+    min-width: 190px;
+}
+
+.footer_links {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration-line: none;
+    position: relative;
+    margin-bottom: 20px
+}
+
+.skype:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/skype_icon_319.png);
+    width: 24px;
+    height: 26px;
+    background-size: cover;
+    float: left;
+    left: -30px
+}
+
+.icq:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/icq_icon_324.png);
+    width: 26px;
+    height: 26px;
+    background-size: cover;
+    float: left;
+    left: -32px
+}
+
+.mail:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/email_icon_332.png);
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    float: left;
+    left: -32px;
+    top: 2px
+}
+
+.phone:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/phone_icon_337.png);
+    width: 23px;
+    height: 24px;
+    background-size: cover;
+    float: left;
+    left: -34px
+}
+
+.footer_icons {
+    float: left;
+    margin-right: 1%;
+    margin-top: 20px
+}
+
+.twitter {
+    display: block;
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/SN_icons/Twitter.png);
+    background-size: 100%;
+    margin-left: -40px
+}
+
+.facebook {
+    display: block;
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/SN_icons/Facebook.png);
+    background-size: 100%;
+}
+
+.in {
+    display: block;
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/SN_icons/In.png);
+    background-size: 100%;
+}
+
+.google {
+    display: block;
+    width: 45px;
+    height: 40px;
+    background-image: url(../img/SN_icons/Google.png);
+    background-size: 100%;
+}
+
+.youtube {
+    display: block;
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/SN_icons/Youtube.png);
+    background-size: 100%;
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center
+}
