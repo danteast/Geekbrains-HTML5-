@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+
+<body>
+    <script>
+        // Написать функцию, преобразующую число в объект. Передавая на вход число в диапазоне [0, 999],
+        // мы должны получить на выходе объект, в котором в соответствующих свойствах описаны разряды числа:
+        // - единицы (в свойстве units)
+        // - десятки (в свойстве tens)
+        // - сотни (в свойстве hundereds)
+        // Например, для числа 45 мы должны получить следующий объект:
+        // {
+        // units: 5, //это единицы
+        // tens: 4, //это десятки
+        // hundreds: 0, //это сотни
+        // }
+        // Если число было передано вне [0, 999] диапазона, не целое число или вообще не число,
+        // необходимо выдать соответствующее сообщение с помощью console.log и вернуть пустой объект.
+        'use strict';
+
+        function turnNumberToObject() {
+
+            if (numb.length == 3) {
+                unit = numb.charAt(2);
+                ten = numb.charAt(1);
+                hundered = numb.charAt(0)
+            } else if (numb.length == 2) {
+                unit = numb.charAt(1);
+                ten = numb.charAt(0);
+                hundered = 0
+            } else {
+                unit = numb;
+                ten = 0;
+                hundered = 0
+            }
+
+        }
+
+        let numb = Number(prompt('введите число'));
+        let unit = 0;
+        let ten = 0;
+        let hundered = 0;
+        if (numb < 0 || numb > 999 || numb == NaN || numb !== Math.round(numb)) {
+            console.log('введенное число не соответствует условиям: целое число в диапазоне от 0 до 999')
+        } else {
+            numb = String(numb);
+            turnNumberToObject(numb);
+            let obj = {
+                units: unit,
+                tens: ten,
+                hundereds: hundered
+            };
+            console.log(obj)
+        }
+    </script>
+</body>
+
+</html>
