@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 200px;
+    margin-right: 50px;
+}
+
+.productImg {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.descText {
+    display: block;
+    width: 198px;
+    height: 213px;
+    border: 1px solid red;
+    font-size: larger;
+    margin-right: 50px;
+    text-align: center;
+    color: darkblue;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
