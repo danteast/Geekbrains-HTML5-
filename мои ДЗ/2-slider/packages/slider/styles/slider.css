@@ -1,0 +1,99 @@
+@keyframes animLeft {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%
+  }
+
+}
+
+@keyframes animRight {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%
+  }
+
+}
+
+.slider {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.hidden-slide {
+  visibility: hidden
+}
+
+.move-slide-left {
+  animation: animLeft 0.5s ease-in;
+}
+
+.move-slide-right {
+  animation: animRight 0.5s ease-in;
+}
+
+/* .moveLeft {
+  transform: translateX(-720px);
+  transition: transform 1s ease;
+}
+
+.returnRight {
+  transform: translateX(720px)
+}
+
+.moveRight {
+  transform: translateX(720px);
+  transition: transform 1s ease;
+}
+
+.returnLeft {
+  transform: translateX(-720px)
+} */
+
+.fas.fa-spinner.fa-spin {
+  font-size: 50px;
+  color: #bbbbbb;
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.slider-leftArrow,
+.slider-rightArrow {
+  position: absolute;
+  top: 47%;
+  z-index: 3;
+  color: #bbbbbb;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.slider-leftArrow {
+  left: 5%;
+}
+
+.slider-rightArrow {
+  right: 5%;
+}
