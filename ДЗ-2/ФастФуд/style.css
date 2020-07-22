@@ -1,0 +1,59 @@
+* {}
+
+.screen {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid red;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+}
+
+p {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+span {
+    text-align: center;
+    font-weight: bold;
+}
+
+.finalSum {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid green;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.summary {
+    width: 70%;
+    height: 1.5rem;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.imgs {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+img {
+    margin: 20px;
+}

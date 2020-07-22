@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>McDonald's</title>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="imgs">
+            <img src="img/hamb.jpg" width="140" height="100" alt="cheeseburger">
+            <img src="img/inside.jpg" width="140" height="100" alt="inside">
+            <img src="img/souse.jpg" width="100" height="100" alt="additional">
+        </div>
+        <form action="#">
+            <p><span>Размер:&nbsp;</span><input class='size' type="radio" name="size" value="big">Большой&nbsp;<br>
+                <input class='size' type="radio" name="size" value="small" checked>Маленький<br> </p>
+            <p><span>Начинка:&nbsp;</span><input class='inside' type="radio" name="inside" value="cheeze" checked>с
+                сыром&nbsp;<br>
+                <input class='inside' type="radio" name="inside" value="salad">с салатом&nbsp;<br>
+                <input class='inside' type="radio" name="inside" value="potato">с картошкой<br></p>
+            <p><span>Дополнительно:&nbsp;</span><input class='additional' type="checkbox" name="additional"
+                    value="spice">с
+                приправой&nbsp;<br>
+                <input class='additional' type="checkbox" name="additional" value="souce">с майонезом<br>
+        </form>
+    </div>
+    <div class="finalSum">
+        <button class="finBtn">Рассчитать</button>
+        <div class="summary"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
