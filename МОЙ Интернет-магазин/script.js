@@ -5,7 +5,6 @@ class ProductList {
     this.buyBtn = document.querySelector('.buy-btn')
     this.goods = [];
     this.allProducts = [];
-    this.buyArr = [];
     this._getProducts()
       .then(data => {
         this.goods = [...data];
@@ -35,23 +34,8 @@ class ProductList {
       const item = new ProductItem(product);
       block.insertAdjacentHTML("beforeend", item.render());
     }
-    this.buyArr = [...document.querySelectorAll('.buy-btn')];
-    this.buyArr.forEach(btn => {
-      this.addBuyBtnClickListener(this.buyArr.indexOf(btn))
-    })
-
     block.insertAdjacentHTML("beforeend", this.renderfinalProductListSum());
   }
-
-  addBuyBtnClickListener(index) {
-    this.buyArr[index].id = index;
-    this.buyArr[index].addEventListener("click", (event) => {
-      let y = event.currentTarget.id;
-      cartBlock.cart[y].quantity++;
-      // const cart = new Cart()
-      // cart.rerenderCart()
-    });
-  };
 
 
   rerenderCart() {
@@ -105,6 +89,7 @@ class Cart {
     this.cartTable = document.querySelector(".cartTable");
     this.cart = [];
     this.cancelArr = [];
+    this.buyArr = [];
     this.cartBtn = document.getElementById("cartBtn");
     this.FinalSum = 0;
     this._putProductsInCart()
@@ -153,22 +138,13 @@ class Cart {
       if (this.cart[y].quantity > 1) {
         this.cart[y].quantity--
       } else {
-        this.cart.splice(y);
+        this.cart.splice(y, y + 1);
       }
-      this.renderCart2()
+      this.renderCart2();
+      this.cancelArr[index].id = 0;
     });
 
   }
-
-  // cancelBuy(index) => {
-  //   if (this.cart[index].quantity > 1) {
-  //     this.cart[index].quantity--
-  //   } else {
-  //     this.cart.splice(index);
-  //     this.renderCart()
-  //   }
-  // }
-
 
   /**
    * Метод отрисовывает Корзину в виде таблицы
@@ -183,13 +159,28 @@ class Cart {
     }
   }
 
+
   renderCart2() {
+    this.cartTable.innerHTML = '';
     for (let product of this.cart) {
       const item = new CartItem(product);
       const index = this.cart.indexOf(product);
       this.cartTable.insertAdjacentHTML("beforeend", item.renderCartItem());
       this.addCancelBtnClickListener(index)
     }
+  }
+
+  addBuyBtnClickListener() {
+    this.buyArr = [...document.querySelectorAll('.buy-btn')];
+    this.buyArr.forEach(btn => {
+      btn.id = index;
+      this.addEventListener("click", (event) => {
+        let y = event.currentTarget.id;
+        cartBlock.cart[y].quantity++;
+        // const cart = new Cart()
+        // cart.rerenderCart()
+      });
+    });
   }
 
   checkCartStatus() {
@@ -249,4 +240,5 @@ class CartItem {
 // });
 let List = new ProductList();
 let cart = new Cart();
-cart.addCartBtnClickListener()
+cart.addCartBtnClickListener();
+cart.addBuyBtnClickListener()
