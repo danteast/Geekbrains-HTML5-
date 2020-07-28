@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <label for="#">&nbsp;&nbsp;Фамилия Имя Отчество<br>
+                <input type="name" id="name">
+            </label>
+            <label for="#">&nbsp;&nbsp;Телефон<br>
+                <input type="text" id="tel" placeholder="+7(000)000-00-00">
+            </label>
+            <label for="#">&nbsp;&nbsp;Эл.почта<br>
+                <input type="email" id="email">
+            </label>
+            <label for="#">&nbsp;&nbsp;Сообщение<br>
+                <textarea type="text" id="mess" rows="10"></textarea>
+            </label>
+            <button class="btn" type="submit">Отправить</button>
+
+        </form>
+        <p class="alert" id="al1">Заполнено не корректно</p>
+        <p class="alert" id="al2">Заполнено не корректно</p>
+        <p class="alert" id="al3">Заполнено не корректно</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
