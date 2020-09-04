@@ -1,0 +1,18 @@
+.photo {
+    width:350px;
+    /* height: 120px;     */
+    margin: 25px 50px;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+.under {
+    text-align: center;
+    margin-left: 50px;
+    color: red
+}
+
+    
