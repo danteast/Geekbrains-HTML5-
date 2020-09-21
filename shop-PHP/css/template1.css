@@ -1,0 +1,286 @@
+body{
+    font-family: 'Bellota Text';
+    margin:0;
+}
+.navmenu {
+    background:#db2da7;
+    padding:20px 0;
+}
+.zagl{
+    display:block;
+    width:1170px;
+    margin:0 auto;
+    text-align: center;
+}
+.zagl h1{
+    font-size:24px;
+    text-align: center;
+}
+.header ul  {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    max-width:1170px;
+    margin:0 auto;
+}
+.header ul li {
+    display:block;
+    text-decoration:none;
+}
+.header a{
+    text-decoration:none;
+    color:#fff;
+}
+.header a:hover{
+    color:#222;
+}
+.napoln{
+    font-size:30px;
+    text-align:center;
+    margin-top:100px;
+    color:#ccc;
+}
+.container {
+    max-width:1170px!important;
+    margin:30px auto!important;
+    padding-bottom:50px;
+}
+.container form{
+    text-align:center;
+}
+.container form input,
+.container form select,
+.container form textarea {
+    padding:10px;
+    font-family: 'Bellota Text';
+}
+.result{
+    color:green;
+    margin:30px auto;
+    text-align:center;
+    border:1px solid #ccc;
+    display:block;
+    max-width:300px;
+    padding:10px;
+}
+.btn,
+.btn a{
+    background:#ffc64b;
+    color:#222;
+    text-align:center;
+    padding:5px;
+    text-decoration:none;
+}
+.btn:hover,
+.btn:hover a{
+    background:#222;
+    color:#ffc64b!important;
+    cursor:pointer;
+}
+.container h3{
+    text-align:center;
+}
+.testmonial{
+    border:1px solid #ccc;
+    margin:10px;
+    padding:10px;
+}
+.testmonial{
+    border:1px solid #ccc;
+    margin:10px;
+    padding:10px;
+    position:relative;
+}
+.tname{
+    font-weight:bold;
+}
+.tdate{
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+hr{
+    border: 1px solid #ccc;
+    border-bottom-width: 0;
+}
+.otzivi input{
+    display:block;
+    margin:10px auto;
+}
+.otzivi .inot{
+    min-width:400px;
+}
+.otzivi .btn{
+    min-width:200px!important;
+}
+.otzivi {
+    margin-top:50px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+    max-width: 300px;
+    text-align:center;
+    border:none;
+    padding:10px;
+    margin:10px;
+}
+.product:hover{
+    border-color:#3387c7;
+}
+.product_title a {
+    text-decoration:none;
+    color:#3387c7;
+}
+.product_title a:hover{
+    color:#222;
+}
+.small_desc {
+    font-size:12px;
+}
+.price{
+    font-weight:bold;
+    margin-bottom:10px;
+    font-size:18px;
+}
+.buy {
+    max-width:100px;
+    margin:0 auto;
+}
+.buy a {
+    color:#222;
+}
+.buy a:hover {
+    color:#ffc64b;
+    text-decoration:none;
+}
+.formadmin input,
+.formadmin textarea {
+    display:inline-block;
+    min-width: 400px;
+    margin:10px;
+}
+.formadmin .btn {
+    border:none;
+    max-width:100px;
+}
+.sproduct{
+    margin: 0 auto;
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.sproduct .btn{
+    display:inline-block;
+    min-width:100px;
+}
+.sprice{
+    font-size:34px;
+    margin-bottom:20px;
+    color:#3387c7;
+    text-align:center;
+}
+.full_disc {
+    text-align:left;
+}
+.sproduct .imgblock,
+.sproduct .descblock{
+    margin:30px;
+}
+.singleproduct .btn{
+    display:inline-block;
+    width:100px;
+    margin:0 auto;
+    text-align:center;
+}
+.singleproduct {
+    text-align:center;
+}
+.qualitity input {
+    padding:3px!important;
+    margin:10px;
+    width:40px;
+    text-align:center;
+}
+.cartbtn {
+    background:#ffc64b;
+    width: 80px!important;
+    border:0;color:#222;
+    text-align:center;
+    padding:5px;
+    text-decoration:none;
+}
+.cartbtn:hover{
+    background:#222;
+    border:1px solid #222;
+    color:#ffc64b;
+    cursor:pointer;
+}
+.oforml input{
+    min-width:300px;
+}
+.kabinet img{
+    max-width:40px;
+}
+.kabinet .products{
+    justify-content:flex-end;
+    flex-direction:row-reverse
+}
+.szakaz{
+    margin:10px;
+}
+.nocart{
+    line-height:40px;
+    text-align:center;
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align:center;
+    background:#db2da7;
+    color:#fff;
+    padding:10px 0 10px;
+}
+.itog {
+    text-align:center;
+    color:#3387c7;
+    margin:20px 0;
+}
+.itog span{
+    font-weight:bold;
+}
+.admin .product img{
+    max-width:50px;
+}
+.adminproduct{
+    border:1px solid #ccc;
+    margin:10px;
+    display:inline-block;
+    padding:10px;
+    width:100%;
+    font-size:14px;
+}
+.adminproduct span{
+    color:#3387c7
+}
+.adminproduct .small_desc,
+.adminproduct .price{
+    font-size:14px;
+    font-weight:normal;
+}
+.adminproduct img{
+    float:left;
+    max-width:100px;
+    margin:10px;
+}
+
+
+
+
