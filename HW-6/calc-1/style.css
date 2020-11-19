@@ -1,0 +1,16 @@
+.calculator {
+    background-color: #ccc;
+    border: 2px solid blue;
+    padding: 30px;
+    width: fit-content;
+}
+.field {
+    margin-left: 20px;
+    font-size: 2em;
+}
+.result {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
